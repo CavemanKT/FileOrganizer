@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 600.0
+color = Color( 0.0392157, 0.137255, 0.227451, 1 )
+
+[node name="Directory" type="Label" parent="."]
+margin_left = 138.0
+margin_top = 107.0
+margin_right = 317.799
+margin_bottom = 132.0
+text = "Directory to clean: "
+uppercase = true
+
+[node name="Example" type="Label" parent="."]
+margin_left = 487.0
+margin_top = 189.0
+margin_right = 695.0
+margin_bottom = 222.0
+text = "Example:
+D:/a/b/c"
+
+[node name="Error" type="Label" parent="."]
+margin_left = 402.0
+margin_top = 35.0
+margin_right = 598.0
+margin_bottom = 67.0
+
+[node name="DirectoryLocation" type="LineEdit" parent="."]
+margin_left = 295.0
+margin_top = 91.0
+margin_right = 837.0
+margin_bottom = 136.0
+
+[node name="CleanBtn" type="Button" parent="."]
+margin_left = 867.0
+margin_top = 92.0
+margin_right = 927.0
+margin_bottom = 130.0
+text = "Clean"
+
+[node name="CheckedFiles" type="RichTextLabel" parent="."]
+margin_left = 42.0
+margin_top = 225.0
+margin_right = 997.0
+margin_bottom = 571.0
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+margin_left = 344.0
+margin_top = 260.0
+margin_right = 645.0
+margin_bottom = 406.0
+dialog_text = "Pressing OK will save a file of all moved in your set directory locaiton."
+dialog_autowrap = true
